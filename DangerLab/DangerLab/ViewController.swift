@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let someCoolText = "this is a cool text"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        print("Check this out \(someCoolText)")
     }
-
-
+    
 }
 

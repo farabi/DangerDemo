@@ -1,6 +1,10 @@
 os: osx
 osx_image: xcode10.3
 language: swift
+install:
+    - brew install danger/tap/danger-swift
+script:
+    - (cd DangerLab/DangerLab && exec danger-swift ci)
 xcode_project: DangerLab/DangerLab.xcodeproj # path to your xcodeproj folder
 xcode_scheme: DangerLab
 xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone Xʀ
