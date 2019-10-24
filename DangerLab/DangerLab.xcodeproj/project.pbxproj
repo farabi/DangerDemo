@@ -13,10 +13,18 @@
 		93112A6523619C5B00DF7CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93112A6423619C5B00DF7CB0 /* Assets.xcassets */; };
 		93112A6823619C5B00DF7CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93112A6623619C5B00DF7CB0 /* LaunchScreen.storyboard */; };
 		93112A7323619C5B00DF7CB0 /* DangerLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93112A7223619C5B00DF7CB0 /* DangerLabUITests.swift */; };
+		93EF32662361B02D00A11A34 /* DangerLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF32652361B02D00A11A34 /* DangerLabTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		93112A6F23619C5B00DF7CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93112A5223619C5900DF7CB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93112A5923619C5900DF7CB0;
+			remoteInfo = DangerLab;
+		};
+		93EF32682361B02D00A11A34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 93112A5223619C5900DF7CB0 /* Project object */;
 			proxyType = 1;
@@ -36,6 +44,9 @@
 		93112A6E23619C5B00DF7CB0 /* DangerLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangerLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93112A7223619C5B00DF7CB0 /* DangerLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerLabUITests.swift; sourceTree = "<group>"; };
 		93112A7423619C5B00DF7CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93EF32632361B02D00A11A34 /* DangerLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangerLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EF32652361B02D00A11A34 /* DangerLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerLabTests.swift; sourceTree = "<group>"; };
+		93EF32672361B02D00A11A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93EF32602361B02D00A11A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +79,7 @@
 			children = (
 				93112A5C23619C5900DF7CB0 /* DangerLab */,
 				93112A7123619C5B00DF7CB0 /* DangerLabUITests */,
+				93EF32642361B02D00A11A34 /* DangerLabTests */,
 				93112A5B23619C5900DF7CB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +89,7 @@
 			children = (
 				93112A5A23619C5900DF7CB0 /* DangerLab.app */,
 				93112A6E23619C5B00DF7CB0 /* DangerLabUITests.xctest */,
+				93EF32632361B02D00A11A34 /* DangerLabTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +114,15 @@
 				93112A7423619C5B00DF7CB0 /* Info.plist */,
 			);
 			path = DangerLabUITests;
+			sourceTree = "<group>";
+		};
+		93EF32642361B02D00A11A34 /* DangerLabTests */ = {
+			isa = PBXGroup;
+			children = (
+				93EF32652361B02D00A11A34 /* DangerLabTests.swift */,
+				93EF32672361B02D00A11A34 /* Info.plist */,
+			);
+			path = DangerLabTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,13 +163,31 @@
 			productReference = 93112A6E23619C5B00DF7CB0 /* DangerLabUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		93EF32622361B02D00A11A34 /* DangerLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EF326C2361B02D00A11A34 /* Build configuration list for PBXNativeTarget "DangerLabTests" */;
+			buildPhases = (
+				93EF325F2361B02D00A11A34 /* Sources */,
+				93EF32602361B02D00A11A34 /* Frameworks */,
+				93EF32612361B02D00A11A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93EF32692361B02D00A11A34 /* PBXTargetDependency */,
+			);
+			name = DangerLabTests;
+			productName = DangerLabTests;
+			productReference = 93EF32632361B02D00A11A34 /* DangerLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		93112A5223619C5900DF7CB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = touti;
 				TargetAttributes = {
@@ -149,6 +196,10 @@
 					};
 					93112A6D23619C5B00DF7CB0 = {
 						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 93112A5923619C5900DF7CB0;
+					};
+					93EF32622361B02D00A11A34 = {
+						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 93112A5923619C5900DF7CB0;
 					};
 				};
@@ -168,6 +219,7 @@
 			targets = (
 				93112A5923619C5900DF7CB0 /* DangerLab */,
 				93112A6D23619C5B00DF7CB0 /* DangerLabUITests */,
+				93EF32622361B02D00A11A34 /* DangerLabTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +236,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		93112A6C23619C5B00DF7CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EF32612361B02D00A11A34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +269,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93EF325F2361B02D00A11A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EF32662361B02D00A11A34 /* DangerLabTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +284,11 @@
 			isa = PBXTargetDependency;
 			target = 93112A5923619C5900DF7CB0 /* DangerLab */;
 			targetProxy = 93112A6F23619C5B00DF7CB0 /* PBXContainerItemProxy */;
+		};
+		93EF32692361B02D00A11A34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93112A5923619C5900DF7CB0 /* DangerLab */;
+			targetProxy = 93EF32682361B02D00A11A34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,6 +500,46 @@
 			};
 			name = Release;
 		};
+		93EF326A2361B02D00A11A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DangerLabTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = touti.DangerLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DangerLab.app/DangerLab";
+			};
+			name = Debug;
+		};
+		93EF326B2361B02D00A11A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DangerLabTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = touti.DangerLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DangerLab.app/DangerLab";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,6 +566,15 @@
 			buildConfigurations = (
 				93112A7B23619C5B00DF7CB0 /* Debug */,
 				93112A7C23619C5B00DF7CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EF326C2361B02D00A11A34 /* Build configuration list for PBXNativeTarget "DangerLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EF326A2361B02D00A11A34 /* Debug */,
+				93EF326B2361B02D00A11A34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
